@@ -1,0 +1,10 @@
+Python 3.7.4 (default, Aug  9 2019, 18:34:13) [MSC v.1915 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+====== RESTART: C:/Users/TARUN SAMANTA/Desktop/LeapFinance/test_main.py ======
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.014s
+
+OK
+>>> 

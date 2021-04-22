@@ -1,0 +1,43 @@
+Python 3.7.4 (default, Aug  9 2019, 18:34:13) [MSC v.1915 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+======== RESTART: C:\Users\TARUN SAMANTA\Desktop\LeapFinance\main.py ========
+>>> import main as m
+>>> 
+>>> m.create("Tarun",22)
+>>> m.read("Tarun")
+'Tarun:22'
+>>> m.delete("Tarun")
+key deleted successfully
+>>> m.read("Tarun")
+error: given key does not exist in database. Please enter a valid key
+>>> 
+>>> m.create("AndhraPradesh",13)
+>>> m.create("ArunachalPradesh",25);
+>>> m.create("Assam",34);
+>>> m.create("Bihar",38)
+>>> m.create("Goa",2)
+>>> 
+>>> m.read("ArunachalPradesh")
+'ArunachalPradesh:25'
+>>> 
+>>> m.create("Chennai",50,140)
+>>>  # 3rd argument 120 seconds=2 minutes is the time-to-live value
+ 
+>>> m.read("Assam")
+'Assam:34'
+>>> m.delete("Goa")
+key deleted successfully
+>>> m.read("Goa")
+error: given key does not exist in database. Please enter a valid key
+>>> 
+>>> m.read("AndhraPradesh")
+'AndhraPradesh:13'
+>>> m.delete("Chennai")
+error: time-to-live of  Chennai  has expired
+>>> m.delete("Bihar")
+key deleted successfully
+>>> 
+>>> m.read("Bihar")
+error: given key does not exist in database. Please enter a valid key
+>>> 
